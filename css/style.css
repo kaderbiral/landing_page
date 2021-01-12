@@ -1,0 +1,559 @@
+/* CSS Document */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* For Firefox */
+  scrollbar-color: var(--color3) var(--color1);
+  overflow-y: scroll !important;
+  overflow-x: hidden !important;
+}
+
+/* For Chrome */
+html::-webkit-scrollbar {
+  width: 8px;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--color3);
+  box-shadow: inset 0 0 4px var(--color4);
+}
+html::-webkit-scrollbar-track {
+  background-color: var(--color1);
+}
+
+body {
+  font-family: "Calibri", sans-serif !important;
+  color: var(--color2) !important;
+  font-size: 17px !important;
+}
+
+::selection {
+  background-color: var(--color3);
+  color: var(--color1);
+}
+
+:root {
+  --color1: #ffffff;
+  --color2: #4e4e4e;
+  --color3: #e95575;
+  --color4: #ac314c;
+  --color5: #ec6c87;
+  --color6: #5c63e4;
+  --color7: #40b5f8;
+  --color8: #eeeeee;
+  --color9: #979797;
+  --color10: rgba(55, 64, 230, 0.8);
+  --color11: rgba(0, 0, 0, 0.75);
+}
+
+/* Start Navbar Section */
+
+.nav {
+  top: 0;
+  z-index: 10;
+}
+
+.navbar {
+  padding: 10px 30px 10px 30px !important;
+  background: transparent !important;
+}
+
+.navbar-brand {
+  color: var(--color6) !important;
+  font-size: 2rem !important;
+  font-family: "Nerko One", cursive;
+  letter-spacing: 5px;
+}
+
+.navbar-brand span {
+  color: var(--color3);
+}
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+}
+
+.navbar .navbar-toggler i {
+  color: var(--color3) !important;
+  font-size: 28px !important;
+}
+
+.navbar .navbar-nav li {
+  padding-right: 10px;
+}
+
+.navbar .navbar-nav li a {
+  letter-spacing: 1.5px;
+  color: var(--color3) !important;
+  font-size: 17px;
+  font-weight: 600;
+  float: center;
+  text-align: center;
+}
+
+.navbar .navbar-nav li a:hover {
+  color: var(--color6) !important;
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+}
+
+.navbar .navbar-nav .active {
+  color: var(--color6) !important;
+}
+
+/* Scroll Navbar */
+.fixing {
+  position: fixed;
+  top: 0;
+  width: 100% !important;
+  z-index: 10000;
+  width: 100% !important;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  background-color: var(--color1) !important;
+  -webkit-background-color: var(--color1) !important;
+  -moz-background-color: var(--color1) !important;
+  -o-background-color: var(--color1) !important;
+  box-shadow: 0px 1px 10px 0px var(--color10);
+  -webkit-box-shadow: 0px 1px 10px 0px var(--color10);
+  -moz-box-shadow: 0px 1px 10px 0px var(--color10);
+  -o-box-shadow: 0px 1px 10px 0px var(--color10);
+}
+
+.fixing .navbar-brand,
+.fixing .navbar-nav {
+  margin-top: 0px;
+  margin-bottom: 7px;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: var(--color1) !important;
+  }
+  .navbar .navbar-nav {
+    background-color: var(--color1) !important;
+    border-top: 3px solid var(--color6);
+    color: var(--color1);
+    z-index: 1;
+    margin-top: 5px;
+    border-radius: 0px;
+  }
+  .navbar .navbar-nav ul li {
+    padding: 0.7em 1em !important;
+    font-size: 100%;
+    font-weight: 600;
+    border-bottom: none;
+  }
+}
+
+/* End Navbar Section */
+
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+
+/* Start Header Section */
+
+.header {
+  background-image: linear-gradient(90deg, var(--color7), var(--color6));
+  color: var(--color1);
+  padding-top: 180px;
+  padding-bottom: 47px;
+  position: relative;
+  height: 100%;
+  margin-top: 30px !important;
+}
+
+.header .header-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.header .header-frame svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 126px;
+}
+
+.header .header-frame .shape-fill {
+  fill: var(--color1);
+}
+
+.header .header-title {
+  letter-spacing: 1px;
+  font-size: 30px;
+  margin-top: 85px;
+}
+
+.header .description {
+  font-size: 18px;
+}
+
+.header .btn-light {
+  padding: 8px 20px;
+  border-radius: 0px;
+  color: var(--color1);
+  background-color: var(--color3);
+  border-color: var(--color3);
+}
+
+.header .btn-light:hover {
+  background-color: transparent;
+  color: var(--color1);
+  border-color: var(--color1);
+}
+
+.header img {
+  width: 85%;
+  padding-bottom: 50px;
+}
+
+/* End Header Section */
+
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+
+/* Start Services Section */
+
+#services {
+  padding: 130px 0px;
+}
+
+.title::before {
+  content: "";
+  background: var(--color3);
+  height: 4px;
+  width: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transform: translateY(63px);
+}
+
+.title::after {
+  content: "";
+  background: var(--color3);
+  height: 8px;
+  width: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+  display: block;
+  transform: translateY(9px);
+}
+
+.services .box {
+  margin: 0 auto;
+  margin-bottom: 35px;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  background-image: linear-gradient(90deg, var(--color7), var(--color6));
+  border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
+  padding-right: 42px;
+  padding-top: 30px;
+}
+
+.services .rotate-box {
+  padding-right: 45px;
+  padding-top: 30px;
+  transform: rotate(-43deg);
+}
+
+.services .rotate-box2 {
+  padding-right: 50px;
+  padding-top: 28px;
+  transform: rotate(-80deg);
+}
+
+.services .box img,
+.services .rotate-box img,
+.services .rotate-box2 img {
+  width: 50%;
+  position: absolute;
+}
+
+.services .rotate-box img {
+  transform: rotate(43deg);
+}
+
+.services .rotate-box2 img {
+  width: 55%;
+  transform: rotate(80deg);
+}
+
+.services h4 {
+  color: var(--color2);
+}
+
+/* End Services Section */
+
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+
+/* About-Us Section */
+
+#about-us {
+  background-color: var(--color8);
+  padding: 130px 0px;
+}
+
+.about-us .fa-ul {
+  padding-top: 50px;
+}
+
+.about-us .fa-li {
+  background-image: linear-gradient(to right, var(--color7), var(--color6));
+  border-radius: 50%;
+  padding: 5px 0px;
+}
+
+.about-us .fa-ul i {
+  color: var(--color1) !important;
+}
+
+.about-us .fa-ul p {
+  padding-top: 7px;
+  padding-left: 20px;
+}
+
+.about-us img {
+  width: 100%;
+}
+
+/* End About Us Section */
+
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+
+/* Testimonials Section */
+
+#testimonials {
+  padding: 130px 0px;
+}
+
+.testimonials .profile-box {
+  position: relative;
+  border: 3px solid;
+  border-image: linear-gradient(85deg, var(--color7), var(--color6)) 1;
+  width: 300px;
+  padding: 50px 30px 30px 30px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.testimonials .profile-box:hover {
+  background-image: linear-gradient(85deg, var(--color7), var(--color6));
+  color: var(--color1);
+}
+
+.testimonials .profile-box:hover i {
+  color: var(--color1);
+}
+
+.testimonials .profile {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.testimonials .name {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+.testimonials .content i {
+  color: var(--color9);
+  font-size: 15px;
+}
+
+/* End Testimonials Section */
+
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+
+/* Start Contact Section */
+
+#contact {
+  background-color: var(--color8);
+  padding: 130px 0px;
+}
+
+.contact .contact-infos,
+.contact .contact-form {
+  box-shadow: 1px 1px 10px -3px var(--color11);
+  -webkit-box-shadow: 1px 1px 10px -3px var(--color11);
+  -moz-box-shadow: 1px 1px 10px -3px var(--color11);
+  -o-box-shadow: 1px 1px 10px -3px var(--color11);
+}
+
+.contact h3 {
+  color: var(--color3);
+}
+
+.contact .contact-form .form-control {
+  margin-top: 20px;
+  background-color: var(--color8);
+  outline: none;
+  transition: 0.3s;
+  border-radius: 0px;
+}
+
+.contact .form-control:hover {
+  background-color: var(--color1);
+}
+
+.contact .contact-form .form-control:focus {
+  border-color: var(--color3);
+  box-shadow: 0 0 0 0.3px var(--color3);
+  background-color: var(--color1);
+}
+
+.contact .contact-form button {
+  background-image: linear-gradient(45deg, var(--color7), var(--color6));
+  color: var(--color1);
+  border-radius: 0px;
+  font-size: 18px;
+}
+
+.contact .contact-form button:hover {
+  background-image: linear-gradient(45deg, var(--color6), var(--color7));
+  color: var(--color1);
+}
+
+.contact .contact-infos .fa-li {
+  background-image: linear-gradient(to right, var(--color7), var(--color6));
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  color: var(--color1);
+  font-size: 14px;
+  padding-top: 8px;
+}
+
+.contact .contact-infos .fa-ul a {
+  text-decoration: none;
+  color: var(--color2);
+}
+
+.contact .contact-infos .contact-line {
+  margin-top: 70px;
+  margin-bottom: 26px;
+  border-top: 2px solid;
+  border-image: linear-gradient(50deg, var(--color5), var(--color4)) 1;
+  width: 100%;
+}
+
+.contact .contact-infos .social-icons {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.contact .contact-infos .social-icons i {
+  background-image: linear-gradient(to right, var(--color5), var(--color4));
+  padding-top: 14px;
+  margin-left: 15px;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: var(--color1);
+}
+
+.contact .contact-infos .social-icons i:hover {
+  background-image: linear-gradient(to right, var(--color4), var(--color5));
+  transform: scale(0.8);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+}
+
+/* End Contact Section */
+
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+
+/* Footer Section */
+
+#footer {
+  padding: 80px 0px !important;
+  background-image: linear-gradient(45deg, var(--color7), var(--color6));
+  color: var(--color1);
+}
+
+.footer .footer-line {
+  margin-top: 30px;
+  border-top: 1px solid var(--color1);
+  width: 100%;
+}
+
+.footer .footer-bottom {
+  margin-bottom: -60px !important;
+}
+
+.footer .footer-bottom .footer-copy span {
+  color: var(--color4);
+}
+
+/* End Footer Section */
+
+/* ========================================================================================================== */
+/* ========================================================================================================== */
+
+/* Scroll Top */
+
+.scroll-top {
+  display: none;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-image: linear-gradient(45deg, var(--color5), var(--color4));
+  color: var(--color1) !important;
+  font-size: 25px;
+  line-height: 50px;
+  font-weight: bold;
+  text-align: center;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  box-shadow: 0 5px 15px -5px var(--color11);
+  transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+}
+
+.scroll-top:hover {
+  cursor: pointer;
+  background-image: linear-gradient(45deg, var(--color7), var(--color6));
+}
+
+.show {
+  display: block;
+}
